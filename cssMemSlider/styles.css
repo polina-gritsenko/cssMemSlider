@@ -117,14 +117,25 @@ li {
 }
 
 @media (max-width: 641px) {
+  body {
+    padding: 0 1vw;
+  }
+  .carousel-container,
+  .slides-container {
+    width: 78vw;
+  }
   .footer {
     flex-direction: column-reverse;
     align-items: center;
     gap: 5vh;
+    width: 78vw;
+  }
+  .slide {
+    flex: 0 0 78vw;
   }
   .title-container {
     align-self: flex-start;
-    width: 80vw;
+    width: 78vw;
   }
   .navigation-button {
     display: flex;
@@ -132,6 +143,18 @@ li {
     width: 2rem;
     height: 2rem;
     cursor: pointer;
+  }
+  #slide2:checked ~ .carousel-container .slides-container {
+    transform: translateX(-78vw);
+  }
+  #slide3:checked ~ .carousel-container .slides-container {
+    transform: translateX(-156vw);
+  }
+  #slide4:checked ~ .carousel-container .slides-container {
+    transform: translateX(-234vw);
+  }
+  #slide5:checked ~ .carousel-container .slides-container {
+    transform: translateX(-312vw);
   }
 }
 
