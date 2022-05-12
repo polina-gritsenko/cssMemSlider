@@ -41,6 +41,7 @@ input {
   width: 80vw;
   justify-content: space-between;
   padding-top: 5vh;
+  align-items: center;
 }
 .slide {
   flex: 0 0 80vw;
@@ -73,11 +74,17 @@ li {
 
 .navigation {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
+}
+.navigation-button {
+  display: flex;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
 }
 
 .navigation-button .circle {
-  cursor: pointer;
   background-color: #71abfe;
   border: 0.2rem solid #71abfe;
   height: 1rem;
@@ -85,12 +92,7 @@ li {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   width: 1rem;
-}
-a.navigation-button:visited .circle {
-  background-color: transparent;
-}
-a.navigation-button:active .circle {
-  background-color: transparent;
+  margin: 0 auto;
 }
 .navigation-button:hover .circle {
   border-color: white;
@@ -112,4 +114,29 @@ a.navigation-button:active .circle {
 }
 #slide5:checked ~ .carousel-container label[for="slide5"] .circle {
   background-color: transparent;
+}
+
+@media (max-width: 641px) {
+  .footer {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 5vh;
+  }
+  .title-container {
+    align-self: flex-start;
+    width: 80vw;
+  }
+  .navigation-button {
+    display: flex;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 700px) {
+  .image {
+    width: 100%;
+  }
 }
