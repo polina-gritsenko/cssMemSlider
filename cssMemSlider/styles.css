@@ -1,0 +1,69 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  /* overflow: hidden; Hide scrollbars */
+}
+
+.carousel {
+  margin: auto;
+  background-color: #25282a;
+  padding: 5vh 0;
+  color: white;
+}
+.carousel-container {
+  display: flex;
+  margin: 0 10vw;
+  overflow-x: hidden;
+  width: 80vw;
+  padding: 0;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+.navigation-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.circle {
+  background-color: #71abfe;
+  border: 0.2rem solid #71abfe;
+  height: 1rem;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 1rem;
+}
+.navigation-item a {
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
+}
+/* .navigation-item:hover {
+  border-color: white;
+  cursor: pointer;
+} */
+
+a.navigation-button:focus .circle {
+  background-color: transparent;
+}
+a.navigation-button:link:focus .circle {
+  background-color: transparent;
+}
+/* a.navigation-button:link .circle {
+  background-color: transparent;
+} */
+a.navigation-button:visited .circle {
+  background-color: transparent;
+}
+
+a.navigation-button:hover .circle {
+  border-color: white;
+  background-color: white;
+  cursor: pointer;
+}
