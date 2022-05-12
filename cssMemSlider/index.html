@@ -12,30 +12,31 @@
 
 <body>
 
-    <h1>Pinterest memes</h1>
+    <!-- <h1>Pinterest memes</h1>
 
     <section class="carousel">
-        <ol class="carousel-container">
-            <li id="slide1" tabindex="0" class="slide">
+        <div class="carousel-container">
+            <div id="slide1" class="slide">
                 <img class="image" src="./assets/slide1.jpg" alt="Grapefruit slice atop a pile of other slices">
-                <span class="title">Meme 1 .</span>
-            </li>
-            <li id="slide2" tabindex="0" class="slide">
+                <div class="title">Meme 1 .</div>
+            </div>
+            <div id="slide2" class="slide">
                 <img class="image" src="./assets/slide2.jpg" alt="Grapefruit slice atop a pile of other slices">
-                <span class="title">Meme 2 ..</span>
-            <li id="slide3" tabindex="0" class="slide">
+                <div class="title">Meme 2 ..</div>
+            </div>
+            <div id="slide3" class="slide">
                 <img class="image" src="./assets/slide3.jpg" alt="Grapefruit slice atop a pile of other slices">
-                <span class="title">Meme 3 ...</span>
-            </li>
-            <li id="slide4" tabindex="0" class="slide">
+                <div class="title">Meme 3 ...</div>
+            </div>
+            <div id="slide4" class="slide">
                 <img class="image" src="./assets/slide4.jpg" alt="Grapefruit slice atop a pile of other slices">
-                <span class="title">Meme 4 ....</span>
-            </li>
-            <li id="slide5" tabindex="0" class="slide">
+                <div class="title">Meme 4 ....</div>
+            </div>
+            <div id="slide5" class="slide">
                 <img class="image" src="./assets/slide5.jpg" alt="Grapefruit slice atop a pile of other slices">
-                <span class="title">Meme 5 .....</span>
-            </li>
-        </ol>
+                <div class="title">Meme 5 .....</div>
+            </div>
+        </div>
 
         <div class="navigation">
             <ol class="navigation-list">
@@ -66,8 +67,71 @@
                 </li>
             </ol>
         </div>
-    </section>
+    </section> -->
 
+
+    <h1>Pinterest memes</h1>
+
+    <section class="carousel">
+        <input checked type="radio" name="slider" id="slide1" />
+        <input type="radio" name="slider" id="slide2" />
+        <input type="radio" name="slider" id="slide3" />
+        <input type="radio" name="slider" id="slide4" />
+        <input type="radio" name="slider" id="slide5" />
+        <div class="carousel-container">
+            <div class="slides-container">
+                <div class="slide slide1">
+                    <img class="image" src="./assets/slide1.jpg" alt="Grapefruit slice atop a pile of other slices">
+                    <!-- <div class="title">Don't get emotionally attached ..</div> -->
+                </div>
+                <div class="slide slide2">
+                    <img class="image" src="./assets/slide2.jpg" alt="Grapefruit slice atop a pile of other slices">
+                    <!-- <div class="title">.. everyone likes me ..</div> -->
+                </div>
+                <div class="slide slide3">
+                    <img class="image" src="./assets/slide3.jpg" alt="Grapefruit slice atop a pile of other slices">
+                    <!-- <div class="title">I'm best of the best!</div> -->
+                </div>
+                <div class="slide slide4">
+                    <img class="image" src="./assets/slide4.jpg" alt="Grapefruit slice atop a pile of other slices">
+                    <!-- <div class="title">Oh yes, security camera!</div> -->
+                </div>
+                <div class="slide slide5">
+                    <img class="image" src="./assets/slide5.jpg" alt="Grapefruit slice atop a pile of other slices">
+                    <!-- <div class="title">Officer is not a problem..</div> -->
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="title-container">
+                    <div class="slides-container">
+                        <div class="title">Don't get emotionally attached ..</div>
+                        <div class="title">.. everyone likes me ..</div>
+                        <div class="title">I'm best of the best!</div>
+                        <div class="title">Oh yes, security camera!</div>
+                        <div class="title">Officer is not a problem..</div>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <label for="slide1" class="navigation-button">
+                        <div class="circle"> </div>
+                    </label>
+                    <label for="slide2" class="navigation-button">
+                        <div class="circle"> </div>
+                    </label>
+                    <label for="slide3" class="navigation-button">
+                        <div class="circle"> </div>
+                    </label>
+                    <label for="slide4" class="navigation-button">
+                        <div class="circle"> </div>
+                    </label>
+                    <label for="slide5" class="navigation-button">
+                        <div class="circle"> </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 
